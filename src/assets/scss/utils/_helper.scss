@@ -1,0 +1,10 @@
+//font-size
+@for $i from 1 through 49 {
+    .font-#{$i} {
+      font-size: #{$i}px;
+    }
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}

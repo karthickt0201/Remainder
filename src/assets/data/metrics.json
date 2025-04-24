@@ -1,0 +1,125 @@
+{
+  "userEngagementMetrics": {
+    "customerEffortScore": 3.0,
+    "netPromoterScore": {
+      "promoters": 37,
+      "passives": 45,
+      "detractors": 23
+    },
+    "csatScore": 70,
+    "customerSatisfaction": {
+      "serviceLevel": {
+        "Very Satisfied": 10,
+        "Satisfied": 30,
+        "Neutral": 20,
+        "Dissatisfied": 20,
+        "Very Dissatisfied": 10
+      },
+      "productQuality": {
+        "Very Satisfied": 8,
+        "Satisfied": 10,
+        "Neutral": 25,
+        "Dissatisfied": 45,
+        "Very Dissatisfied": 12
+      },
+      "priceSatisfaction": {
+        "Too Cheap": 50,
+        "Just Right": 48,
+        "Too Expensive": 23
+      }
+    }
+  },
+  "performanceMetrics": {
+    "timeFrames": ["weekly", "monthly", "yearly"],
+    "weekly": {
+      "revenue": 50000,
+      "profitMargin": 9.5,
+      "roi": 2000,
+      "clv": 181255,
+      "ebitda": [83000, 96000, 112000, 104000, 120000, 88000, 128000],
+      "customerSatisfaction": [2, 3, 2.5, 3.5, 4, 3, 3.8]
+    },
+    "monthly": {
+      "revenue": 85030,
+      "profitMargin": 11.2,
+      "roi": 5000,
+      "clv": 450300,
+      "ebitda": [260000, 270000, 245000, 255000, 280000, 260000, 290000],
+      "customerSatisfaction": [3, 3.5, 3.8, 4, 3.6, 3.9, 4.2]
+    },
+    "yearly": {
+      "revenue": 1040000.6,
+      "profitMargin": 12.7,
+      "roi": 22.3,
+      "clv": 780000,
+      "ebitda": [1245000, 1320000, 1160000, 1280000, 1360000, 1250000, 1400000],
+      "customerSatisfaction": [3.5, 3.7, 3.9, 4, 4.2, 4.3, 4.5]
+    },
+    "financialMetrics": {
+      "netProfitMargin": [5, 6, 8, 12, 10, 6, 9],
+      "debtToEquityRatio": [4, 5, 7, 3, 4, 6, 5]
+    }
+  },
+  "salesData": {
+    "totalIncome": 7485236,
+    "totalProfit": 4430157,
+    "totalCustomers": 31517,
+    "salesAnalytics": {
+      "labels": ["Fri", "Sat", "Sun", "Mon", "Tue", "Wed", "Thu"],
+      "income": [5700, 6400, 6000, 7200, 7800, 6900, 8200],
+      "profit": [2300, 2900, 2500, 3300, 3500, 2800, 3900]
+    },
+    "ordersGeography": {
+      "India": 50,
+      "USA": 20,
+      "UK": 15,
+      "Canada": 15
+    },
+    "topCategories": {
+      "allTime": {
+        "fiction": 18,
+        "nonFiction": 25,
+        "education": 30,
+        "comics": 27
+      },
+      "weekly": {
+        "fiction": 10,
+        "nonFiction": 35,
+        "education": 28,
+        "comics": 27
+      },
+      "monthly": {
+        "fiction": 15,
+        "nonFiction": 30,
+        "education": 35,
+        "comics": 20
+      }
+    },
+    "salesDetails": [
+      {
+        "product": "Jacquema Largo",
+        "price": 9450.0,
+        "quantity": 120,
+        "total": 1134000.0
+      },
+      {
+        "product": "Anker's Limbo Centenary",
+        "price": 12450.0,
+        "quantity": 78,
+        "total": 969100.0
+      },
+      {
+        "product": "There Was One",
+        "price": 7050.0,
+        "quantity": 54,
+        "total": 380700.0
+      },
+      {
+        "product": "Song For The Mute",
+        "price": 19000.0,
+        "quantity": 68,
+        "total": 1292000.0
+      }
+    ]
+  }
+}

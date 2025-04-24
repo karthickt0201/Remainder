@@ -1,0 +1,45 @@
+<div class="d-flex justify-content-center h-100">
+    <div class="bg-body-tertiary border border-dark rounded" style="width: 450px;">
+        <div class="p-4">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="bg-danger-subtle p-2 text-dark rounded w-100">
+                    {{ (currentTime | async) | date:'hh:mm a' }}
+                </span>
+                <div class="d-flex">
+                    <button type="button" (click)="startFastMode()" class="btn btn-danger mx-2">Test</button>
+                <button type="button" (click)="reset()" class="btn btn-dark">Reset</button>
+                </div>
+            </div>
+
+            <div class="my-3 tbl-hyt">
+                <table class="table">
+                    <thead class="sticky-top table-active">
+                        <tr>
+                            <th scope="col">Remainder Name</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for(f of remainderList;track f.time;let i=$index){
+                            <tr>
+                                <td [class.text-decoration-line-through]="f.isStriked">{{f.name}}</td>
+                                <td [class.text-decoration-line-through]="f.isStriked">{{f.time}}</td>
+                                <td (click)="deleteRow(i)"><i class="fa fa-trash cursor-pointer text-danger" aria-hidden="true"></i></td>
+                            </tr>
+                        }                        
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center my-2">
+                <input [formControl]="remainderName" class="py-2 px-1 bg-success-subtle text-dark form-control me-1 w-50" type="text" placeholder="Remainder Name">
+                <input [formControl]="remainderTime" class="py-2 px-1 bg-success-subtle text-dark form-control ms-1 w-50" type="time">
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <button type="button" (click)="addRemainder()" class="btn btn-primary mt-2">Add Remainder</button>
+            </div>
+        </div>
+    </div>
+</div>
